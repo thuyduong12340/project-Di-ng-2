@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:id="@+id/tv_tenbaihat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+
+        <ImageView
+            android:id="@+id/img_baihat"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/khangviet" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv_dau"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00" />
+
+        <TextView
+            android:id="@+id/tv_cuoi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="310dp"
+            android:text="00:00" />
+    </LinearLayout>
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Volumn" />
+
+    <SeekBar
+        android:id="@+id/seekBar_volumn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imgbtn_prev"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/clickprev" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_play"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clickplay" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_stop"
+            android:layout_width="70dp"
+            android:layout_height="wrap_content"
+            android:src="@drawable/clickstop" />
+
+        <ImageButton
+            android:id="@+id/imgbtn_next"
+            android:layout_width="70dp"
+            android:layout_height="50dp"
+            android:src="@drawable/clicknext" />
+
+        <ImageButton
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:id="@+id/imgDanhSach"
+            android:src="@drawable/danhsach" />
+    </LinearLayout>
+
+</LinearLayout>
